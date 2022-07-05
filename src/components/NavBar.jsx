@@ -1,7 +1,7 @@
 function Li(props) {
     return(
         <li>
-            <a href='/'>
+            <a href='#/'>
                 {props.title}
             </a>
         </li>
