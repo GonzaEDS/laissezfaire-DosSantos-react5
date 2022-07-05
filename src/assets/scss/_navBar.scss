@@ -90,13 +90,15 @@
         }
       
     }
-    .lf-navbar {
+
+    .lf-navbar, input:checked ~ .lf-navbar {
         display: flex;
         align-items: center;
         justify-content: space-around;
         width: 100%;
         background-color: rgb(0 0 0 / 16%);
         height: 2.2rem;
+        font-size: 1rem;
         ul {
             list-style-type: none;
             display: flex;
@@ -104,6 +106,7 @@
             width: 100%;
             gap: 2rem;
             padding: 0 5rem;
+            flex-direction: row;
         }
         a {
             text-decoration: none;

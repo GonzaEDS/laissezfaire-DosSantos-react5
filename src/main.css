@@ -107,23 +107,25 @@ input:checked ~ .lf-navbar ul {
     display: none;
   }
 
-  .lf-navbar {
+  .lf-navbar, input:checked ~ .lf-navbar {
     display: flex;
     align-items: center;
     justify-content: space-around;
     width: 100%;
     background-color: rgba(0, 0, 0, 0.16);
     height: 2.2rem;
+    font-size: 1rem;
   }
-  .lf-navbar ul {
+  .lf-navbar ul, input:checked ~ .lf-navbar ul {
     list-style-type: none;
     display: flex;
     align-items: center;
     width: 100%;
     gap: 2rem;
     padding: 0 5rem;
+    flex-direction: row;
   }
-  .lf-navbar a {
+  .lf-navbar a, input:checked ~ .lf-navbar a {
     text-decoration: none;
     color: #1f190d;
   }
