@@ -1,14 +1,13 @@
-import './App.css'
 import './main.css'
 
-import NavBar from './components/NavBar'
+import Header from './components/Header'
+import ItemListContainer from './components/ItemListContainer'
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <NavBar></NavBar>
-      </header>
+      <Header />
+      <ItemListContainer greeting="Welcome to LaizzesFaire.com" />
     </div>
   )
 }

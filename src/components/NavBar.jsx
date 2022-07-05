@@ -1,16 +1,20 @@
-
-function NavBar() {
+function Li(props) {
     return(
-        <nav className="lf-navbar">
-            <h2>LaissezFaire</h2>
+        <li>
+            <a href='/'>
+                {props.title}
+            </a>
+        </li>
+    )
+}
+function NavBar() {
+    const navItems = ["Home", "Categories", "Favorites", "History", "Deals"]
+    return(
+        <nav className="lf-navbar">     
             <ul className="lf-navUl">
-                <li>
-                    <a href="/">Home</a>
-                    
-                </li>
-                <li>
-                    <a href="/">Categories</a>
-                </li>
+                {navItems.map(title => {
+                    return <Li title={title}/>
+                })}
             </ul>
         </nav>
     )
