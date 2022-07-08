@@ -1,3 +1,5 @@
+import React from 'react';
+
 function Li(props) {
     return(
         <li>
@@ -12,9 +14,10 @@ function NavBar() {
     return(
         <nav className="lf-navbar">     
             <ul className="lf-navUl">
-                {navItems.map(title => {
-                    return <Li title={title}/>
-                })}
+                {navItems.map(title =>{
+                    return <Li key={title} title={title}/>
+                    }) 
+                }
             </ul>
         </nav>
     )

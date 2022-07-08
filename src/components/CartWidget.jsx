@@ -1,8 +1,9 @@
+import React from 'react';
 
 function CartWidget() {
     return (
         <div className="cart-widget">
-            <i class="bi bi-cart3"></i>
+            <i className="bi bi-cart3"></i>
         </div>
         
     )

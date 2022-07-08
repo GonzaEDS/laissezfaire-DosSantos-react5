@@ -1,4 +1,4 @@
-
+import React from 'react';
 import CartWidget from './CartWidget'
 import NavBar from './NavBar'
 
@@ -9,7 +9,7 @@ function Header() {
             <div className='top-header'>
                 <h2>LaissezFaire</h2>
                 <div className='top-end'>
-                    <label for="nav-switch" className='burger-btn'><i class="bi bi-list"></i></label>
+                    <label htmlFor="nav-switch" className='burger-btn'><i className="bi bi-list"></i></label>
                 <CartWidget/>
                 </div>
                 

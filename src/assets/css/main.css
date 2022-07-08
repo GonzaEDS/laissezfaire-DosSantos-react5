@@ -1,0 +1,244 @@
+body {
+  background: linear-gradient(89deg, #3d3c52 8%, #303244);
+}
+
+*, *::before, *::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+.cart-widget i.bi.bi-cart3 {
+  font-size: 2rem;
+  cursor: pointer;
+}
+
+@media screen and (min-width: 1023px) {
+  .cart-widget {
+    margin-right: 2rem;
+  }
+  .cart-widget i.bi.bi-cart3 {
+    font-size: 2rem;
+  }
+}
+.lf-header {
+  background-color: #f3ab26;
+  filter: drop-shadow(0px 2px 1px #121219);
+}
+.lf-header .top-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 4.5rem;
+  padding: 0 calc(1rem + 2vw);
+}
+.lf-header .top-header h2 {
+  color: white;
+  font-size: 2rem;
+  text-shadow: 1px 2px 1px black;
+  margin: 0;
+}
+.lf-header .top-end {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 2rem;
+}
+.lf-header .top-end i.bi.bi-list {
+  font-size: 2rem;
+}
+
+.lf-navbar {
+  display: none;
+}
+.lf-navbar ul {
+  list-style-type: none;
+  display: flex;
+  align-items: center;
+  width: 100%;
+  gap: 2rem;
+  padding: 0 5rem;
+}
+.lf-navbar a {
+  text-decoration: none;
+  color: #1f190d;
+  color: #282214;
+  text-shadow: 1px 1px 2px #fabd4e;
+}
+
+input:checked ~ .lf-navbar {
+  display: flex;
+  height: calc(20rem + 3vh + 5vw);
+  align-items: center;
+  padding: 1rem;
+  justify-content: space-around;
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.16);
+  background: #ffc440;
+  font-size: calc(1.1rem + 1vw);
+}
+input:checked ~ .lf-navbar ul {
+  list-style-type: none;
+  display: flex;
+  align-items: center;
+  width: 100%;
+  gap: 2rem;
+  padding: 0 5rem;
+  flex-direction: column;
+}
+
+@media screen and (min-width: 1023px) {
+  .lf-header {
+    background-color: #f3ab26;
+    filter: drop-shadow(0px 2px 1px #121219);
+  }
+  .lf-header .top-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 4.5rem;
+    padding: 0 5rem;
+  }
+  .lf-header .top-header h2 {
+    color: white;
+    font-size: 2rem;
+    text-shadow: 1px 2px 1px black;
+    margin: 0;
+  }
+  .lf-header .top-header .burger-btn {
+    display: none;
+  }
+
+  .lf-navbar, input:checked ~ .lf-navbar {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.16);
+    height: 2.2rem;
+    font-size: 1rem;
+  }
+  .lf-navbar ul, input:checked ~ .lf-navbar ul {
+    list-style-type: none;
+    display: flex;
+    align-items: center;
+    width: 100%;
+    gap: 2rem;
+    padding: 0 5rem;
+    flex-direction: row;
+  }
+  .lf-navbar a, input:checked ~ .lf-navbar a {
+    text-decoration: none;
+    color: #1f190d;
+  }
+}
+.greeting {
+  display: flex;
+  width: 100%;
+  padding: 2rem;
+  font-size: 1rem;
+  background: linear-gradient(264deg, #222229, #1d1d27, #282830);
+  color: #ceceff;
+  justify-content: center;
+  align-items: center;
+  text-transform: uppercase;
+}
+
+.ic-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  flex-direction: column;
+  margin: 2rem auto;
+  background: hsl(0deg, 0%, 98%);
+  width: 18rem;
+  height: 11rem;
+  padding: 1rem;
+}
+
+.ic-title {
+  font-size: 1rem;
+  text-transform: uppercase;
+  color: #36374b;
+}
+
+.ic-body {
+  height: 100%;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.counter {
+  height: 100%;
+  display: flex;
+  gap: 0.5rem;
+  font-size: 1.8rem;
+  align-items: center;
+  font-weight: 700;
+}
+
+.count-btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1rem;
+  width: 1.5rem;
+  height: 1.5rem;
+  border-radius: 11%;
+  color: #37374c;
+  border: 1px solid #38384c;
+  box-shadow: 1px 1px 1px #35364a;
+  background: white;
+  transition: all cubic-bezier(0.31, 0.46, 1, 1) 0.05s;
+}
+
+.count-btn:hover {
+  filter: brightness(0.9);
+}
+
+.count-btn:active {
+  filter: unset;
+  box-shadow: unset;
+  transform: translate(1px, 1px);
+}
+
+/* From uiverse.io by @Voxybuns */
+.add-to-cart {
+  height: 100%;
+  display: flex;
+  align-items: center;
+}
+.add-to-cart button {
+  /* Variables */
+  --button_radius: 0.75em;
+  --button_color: #ffc440;
+  --button_outline_color: #000000;
+  font-size: 17px;
+  font-weight: bold;
+  border: none;
+  border-radius: var(--button_radius);
+  background: var(--button_outline_color);
+}
+.add-to-cart .button_top {
+  display: block;
+  box-sizing: border-box;
+  border: 2px solid var(--button_outline_color);
+  border-radius: var(--button_radius);
+  padding: 0.6em 1.2em;
+  background: var(--button_color);
+  color: var(--button_outline_color);
+  transform: translateY(-0.1em);
+  transition: transform 0.1s ease;
+}
+.add-to-cart button:hover .button_top {
+  /* Pull the button upwards when hovered */
+  transform: translateY(-0.13em);
+}
+.add-to-cart button:active .button_top {
+  /* Push the button downwards when pressed */
+  transform: translateY(0);
+}
+
+/*# sourceMappingURL=main.css.map */
